@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/tq-jappy/googlemap-route-editor",
+  "scripts": {
+  },
+  "env": {
+    "NPM_CONFIG_PRODUCTION": false
+  }
+}

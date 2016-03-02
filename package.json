@@ -4,10 +4,12 @@
   "description": "Google Map Route Editor",
   "main": "main.js",
   "scripts": {
-    "build": "./node_modules/.bin/gulp build",
-    "clean": "./node_modules/.bin/gulp clean",
+    "start": "node server.js",
+    "postinstall": "npm run build",
+    "build": "node_modules/.bin/gulp build",
+    "clean": "node_modules/.bin/gulp clean",
     "test": "npm test",
-    "watch": "./node_modules/.bin/gulp browserSync"
+    "watch": "node_modules/.bin/gulp browserSync"
   },
   "repository": {
     "type": "git",
@@ -52,6 +54,10 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "express": "4.13.4",
     "jquery": "^2.2.0"
-  }
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ]
 }
