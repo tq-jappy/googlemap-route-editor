@@ -55,6 +55,7 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "express": "4.13.4",
+    "geolib": "2.0.18",
     "jquery": "^2.2.0"
   },
   "cacheDirectories": [

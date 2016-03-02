@@ -1,4 +1,6 @@
-var $ = require('jquery/dist/jquery.min');
+import RotatableMarker from './rotatable-marker'
+
+const $ = require('jquery/dist/jquery.min');
 
 $(document).ready(() => {
   const $map = $('#map');
@@ -13,5 +15,7 @@ $(document).ready(() => {
   };
   const map = new google.maps.Map($map[0], mapOptions);
   console.log('map created.', map);
+
+  const marker = new RotatableMarker(map, mapOptions.center, {});
 });
 
